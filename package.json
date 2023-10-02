@@ -62,7 +62,7 @@
     "mime-db": "^1.51.0",
     "mime-types": "^2.1.34",
     "mongodb": "^3.6.8",
-    "mongoose": "^5.12.15",
+    "mongoose": "^5.13.20",
     "mongoose-legacy-pluralize": "^1.0.2",
     "mpath": "^0.8.4",
     "mquery": "^4.0.0",

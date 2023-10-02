@@ -1,5 +1,9 @@
 lockfileVersion: '6.0'
 
+settings:
+  autoInstallPeers: true
+  excludeLinksFromLockfile: false
+
 dependencies:
   '@discordjs/rest':
     specifier: ^1.7.1
@@ -170,11 +174,11 @@ dependencies:
     specifier: ^3.6.8
     version: 3.7.3
   mongoose:
-    specifier: ^5.12.15
-    version: 5.13.17
+    specifier: ^5.13.20
+    version: 5.13.20
   mongoose-legacy-pluralize:
     specifier: ^1.0.2
-    version: 1.0.2(mongoose@5.13.17)
+    version: 1.0.2(mongoose@5.13.20)
   mpath:
     specifier: ^0.8.4
     version: 0.8.4
@@ -1184,7 +1188,7 @@ packages:
   /discord-messages@1.0.2:
     resolution: {integrity: sha512-LhzNf3CvmSWXutu8UxQBI8b5t3YQ6NiMrhkp0KzH424m6zIgX2ZZrgmO9bxUUpZOmRmM3uW1EIu11lVyKbIX2Q==}
     dependencies:
-      mongoose: 5.13.17
+      mongoose: 5.13.20
     transitivePeerDependencies:
       - aws4
       - bson-ext
@@ -2140,24 +2144,57 @@ packages:
       saslprep: 1.0.3
     dev: false
 
-  /mongoose-legacy-pluralize@1.0.2(mongoose@5.13.17):
+  /mongodb@3.7.4:
+    resolution: {integrity: sha512-K5q8aBqEXMwWdVNh94UQTwZ6BejVbFhh1uB6c5FKtPE9eUMZPUO3sRZdgIEcHSrAWmxzpG/FeODDKL388sqRmw==}
+    engines: {node: '>=4'}
+    peerDependencies:
+      aws4: '*'
+      bson-ext: '*'
+      kerberos: '*'
+      mongodb-client-encryption: '*'
+      mongodb-extjson: '*'
+      snappy: '*'
+    peerDependenciesMeta:
+      aws4:
+        optional: true
+      bson-ext:
+        optional: true
+      kerberos:
+        optional: true
+      mongodb-client-encryption:
+        optional: true
+      mongodb-extjson:
+        optional: true
+      snappy:
+        optional: true
+    dependencies:
+      bl: 2.2.1
+      bson: 1.1.6
+      denque: 1.5.1
+      optional-require: 1.1.8
+      safe-buffer: 5.2.1
+    optionalDependencies:
+      saslprep: 1.0.3
+    dev: false
+
+  /mongoose-legacy-pluralize@1.0.2(mongoose@5.13.20):
     resolution: {integrity: sha512-Yo/7qQU4/EyIS8YDFSeenIvXxZN+ld7YdV9LqFVQJzTLye8unujAWPZ4NWKfFA+RNjh+wvTWKY9Z3E5XM6ZZiQ==}
     peerDependencies:
       mongoose: '*'
     dependencies:
-      mongoose: 5.13.17
+      mongoose: 5.13.20
     dev: false
 
-  /mongoose@5.13.17:
-    resolution: {integrity: sha512-kzlwQgrWaQflFSdENNGN4+FQEm/yOMgR1T1okIp5fARGQ8YKdjO+0U9Ikzsv5OVSFIkE0ATyJj2XxawYbf2bpA==}
+  /mongoose@5.13.20:
+    resolution: {integrity: sha512-TjGFa/XnJYt+wLmn8y9ssjyO2OhBMeEBtOHb9iJM16EWu2Du6L1Q6zSiEK2ziyYQM8agb4tumNIQFzqbxId7MA==}
     engines: {node: '>=4.0.0'}
     dependencies:
       '@types/bson': 4.0.5
       '@types/mongodb': 3.6.20
       bson: 1.1.6
       kareem: 2.3.2
-      mongodb: 3.7.3
-      mongoose-legacy-pluralize: 1.0.2(mongoose@5.13.17)
+      mongodb: 3.7.4
+      mongoose-legacy-pluralize: 1.0.2(mongoose@5.13.20)
       mpath: 0.8.4
       mquery: 3.2.5
       ms: 2.1.2
